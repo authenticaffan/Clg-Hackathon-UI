@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counsellor's Book</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .student-btn {
+      background-color: #007bff;
+      color: #fff;
+    }
+    .student-btn a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .student-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .faculty-btn {
+      background-color: #28a745;
+      color: #fff;
+    }
+
+    .faculty-btn a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .faculty-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Counsellor's Book</h1>
+  <button class="btn student-btn"><a href="student.html">Student Login</a></button>
+  <button class="btn faculty-btn"><a href="faculty.html">Faculty Login</a></button>
+</div>
+
+<script>
+  function studentLogin() {
+    alert("Student Login clicked");
+    // Add logic for student login
+  }
+
+  function facultyLogin() {
+    alert("Faculty Login clicked");
+    // Add logic for faculty login
+  }
+</script>
+
+</body>
+</html>

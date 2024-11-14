@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Record</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f8f8f8;
+      font-weight: bold;
+    }
+
+    .overflow-x-auto {
+      overflow-x: auto;
+    }
+
+    .grid {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .grid-cols-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-cols-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .border {
+      border: 1px solid #ddd;
+      padding: 4px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .space-y-4 > div {
+      margin-bottom: 16px;
+    }
+
+    .text-xs {
+      font-size: 10px;
+    }
+
+    .text-sm {
+      font-size: 12px;
+    }
+
+    .border-b {
+      border-bottom: 1px solid #ddd;
+      height: 24px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Academic Record</h1>
+  
+  <!-- Semester Information -->
+  <div class="mb-6">
+    <h2>Roll No:</h2>
+    <h2>Semester: VII</h2>
+  </div>
+
+  <!-- Subjects and Exams Table -->
+  <div class="overflow-x-auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Subject Name & Code</th>
+          <th>Mid Term-I</th>
+          <th>Mid Term-II</th>
+          <th>Mid Term-III</th>
+          <th>Model Exam</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Creating empty rows to represent 7 subjects -->
+        <tr>
+          <td>1.</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>2.</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>3.</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>4.</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>5.</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>6.</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>7.</td><td></td><td></td><td></td><td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Attendance Percentage -->
+  <div class="mb-6">
+    <h3>Attendance Percentage</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>%</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- University Exam -->
+  <div class="grid grid-cols-4">
+    <!-- Loop for 16 subjects in grid form -->
+    <div class="border">
+      <div class="text-xs">1</div>
+      <div class="border">Sub Code</div>
+      <div class="border">Grade</div>
+    </div>
+    <div class="border">
+        <div class="text-xs">2</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">3</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">4</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">5</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">6</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">7</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">8</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">9</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">10</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">11</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">12</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">13</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">14</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">15</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+      <div class="border">
+        <div class="text-xs">16</div>
+        <div class="border">Sub Code</div>
+        <div class="border">Grade</div>
+      </div>
+
+    <!-- Add more blocks up to 16 -->
+  </div>
+
+  <!-- Behavioral and Reporting Section -->
+  <div class="space-y-4">
+    <!-- Each behavior/report section with a divider line below -->
+    <div>
+      <h3>General Behaviour</h3>
+      <div class="border-b"></div>
+    </div>
+    <div>
+      <h3>Inside the Campus</h3>
+      <div class="border-b"></div>
+    </div>
+    <div>
+      <h3>Reports Sent to Parents</h3>
+      <div class="space-y-2">
+        <div class="flex"><span>1.</span><div class="border-b"></div></div>
+        <div class="flex"><span>2.</span><div class="border-b"></div></div>
+        <div class="flex"><span>3.</span><div class="border-b"></div></div>
+        <div class="flex"><span>4.</span><div class="border-b"></div></div>
+      </div>
+    </div>
+    <!-- Add other sections similarly -->
+  </div>
+
+  <!-- Grading System -->
+  <h3>Grading System</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Grade</th>
+        <th>Grade Points</th>
+        <th>Marks Range</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>S</td><td>10</td><td>91-100</td>
+      </tr>
+      <tr>
+        <td>A</td><td>9</td><td>81-90</td>
+      </tr>
+      <tr>
+        <td>B</td><td>8</td><td>71-80</td>
+      </tr>
+      <tr>
+        <td>C</td><td>7</td><td>61-70</td>
+      </tr>
+      <tr>
+        <td>D</td><td>6</td><td>55-60</td>
+      </tr>
+      <tr>
+        <td>E</td><td>5</td><td>50-54</td>
+      </tr>
+      <tr>
+        <td>U/RA</td><td>0</td><td><50</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="submit" style="display: flex; justify-content: center; margin-top: 30px;">
+    <button type="submit">Submit</button>
+  </div>
+</div>
+
+</body>
+</html>

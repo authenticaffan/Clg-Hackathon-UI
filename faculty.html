@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semester Buttons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+
+    .button-container a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .semester-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .semester-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select Semester</h1>
+    <div class="button-container">
+      <button class="semester-button" ><a href="semester1.html">Semester 1</a></button>
+      <button class="semester-button" ><a href="semester2.html">Semester 2</a></button>
+      <button class="semester-button" ><a href="semester3.html">Semester 3</a></button>
+      <button class="semester-button" ><a href="semester4.html">Semester 4</a></button>
+      <button class="semester-button" ><a href="semester5.html">Semester 5</a></button>
+      <button class="semester-button" ><a href="semester6.html">Semester 6</a></button>
+      <button class="semester-button" ><a href="semester7.html">Semester 7</a></button>
+      <button class="semester-button" ><a href="semester8.html">Semester 8</a></button>
+    </div>
+  </div>
+
+</body>
+</html>

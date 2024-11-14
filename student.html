@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counsellor's Book</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      font-family: serif;
+      color: #4a4a4a;
+      margin-bottom: 20px;
+    }
+    section {
+      border: 1px solid #ddd;
+      padding: 16px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+    .grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+    .grid-3 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .signature {
+      height: 50px;
+      border-bottom: 1px solid #ddd;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Details</h1>
+    <form>
+      <!-- Profile Section -->
+      <section>
+        <h2>Profile</h2>
+        <div class="grid grid-2">
+          <input type="text" placeholder="Student Name">
+          <input type="date" placeholder="Date of Birth">
+          <input type="text" placeholder="Roll Number">
+          <input type="text" placeholder="Register Number">
+          <input type="text" placeholder="Branch">
+          <input type="text" placeholder="Year of Entry to College">
+        </div>
+      </section>
+
+      <!-- Parent Information Section -->
+      <section>
+        <h2>Parent Information</h2>
+        <div class="grid grid-2">
+          <input type="text" placeholder="Father's Name">
+          <input type="text" placeholder="Father's Occupation">
+          <input type="text" placeholder="Education/Occupation">
+          <textarea placeholder="Background of Family"></textarea>
+        </div>
+      </section>
+
+      <!-- Contact Information Section -->
+      <section>
+        <h2>Contact Information</h2>
+        <div class="grid grid-3">
+          <input type="text" placeholder="Parent's Phone Number">
+          <input type="text" placeholder="Land Line">
+          <input type="text" placeholder="Mobile Number">
+        </div>
+      </section>
+
+      <!-- Address Section -->
+      <section>
+        <h2>Address</h2>
+        <div class="grid grid-2">
+          <textarea placeholder="Permanent Address"></textarea>
+          <textarea placeholder="Present Address"></textarea>
+        </div>
+      </section>
+
+      <!-- Additional Information Section -->
+      <section>
+        <h2>Additional Information</h2>
+        <div class="grid grid-2">
+          <input type="text" placeholder="Languages Known">
+          <input type="text" placeholder="Guardian's Name (if any)">
+          <input type="text" placeholder="Name of the Last School Attended">
+          <input type="text" placeholder="Medium of Instruction in +2">
+        </div>
+      </section>
+
+      <!-- Marks Section -->
+      <section>
+        <h2>Marks</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maths</td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td>Physics</td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td>Chemistry</td>
+              <td><input type="text"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="grid grid-2" style="margin-top: 16px;">
+          <input type="text" placeholder="Cut-off Mark">
+          <input type="text" placeholder="Quota">
+        </div>
+      </section>
+
+      <!-- Counsellor's Details Section -->
+      <section>
+        <h2>Counsellor's Details</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Counsellor's Name</th>
+              <th>Signature</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>First Year</td>
+              <td><input type="text"></td>
+              <td class="signature"></td>
+            </tr>
+            <tr>
+              <td>Second Year</td>
+              <td><input type="text"></td>
+              <td class="signature"></td>
+            </tr>
+            <tr>
+              <td>Third Year</td>
+              <td><input type="text"></td>
+              <td class="signature"></td>
+            </tr>
+            <tr>
+              <td>Final Year</td>
+              <td><input type="text"></td>
+              <td class="signature"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Signature Section -->
+      <section>
+        <h2>Signatures</h2>
+        <div class="grid grid-2">
+          <div>
+            <p>Student's Signature</p>
+            <div class="signature"></div>
+          </div>
+          <div>
+            <p>Parent's Signature</p>
+            <div class="signature"></div>
+          </div>
+        </div>
+      </section>
+    </form>
+
+    <div class="submit" style="display: flex; justify-content: center; margin-top: 30px;">
+        <button type="submit">Submit</button>
+      </div>
+  </div>
+</body>
+</html>
